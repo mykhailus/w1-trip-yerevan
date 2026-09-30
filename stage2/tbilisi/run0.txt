@@ -1,0 +1,10 @@
+﻿Traceback (most recent call last):
+  File "settle.py", line 214, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "settle.py", line 195, in main
+    res = settle(data)
+  File "settle.py", line 77, in settle
+    who, for_ = r["paid_by"], r.get("for", people)
+                ~^^^^^^^^^^^
+KeyError: 'paid_by'
